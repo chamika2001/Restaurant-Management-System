@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    overflow-x: hidden;
+}
+.wrapper{
+
+    width: 100%;
+    height: auto;
+    height: 100vh;
+    /*background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(image.jpg);*/
+    background-size: cover;
+    display: flex;
+    color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    
+    
+}
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background-color: rgba(15, 23, 43, .9); /* Adjust the alpha value for the transparency */
+    z-index: 0;
+}
+.navbar{
+
+    position: relative;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px 10px;
+    align-items: center;
+    
+}
+.navbar .logo{
+
+    width: 150px;
+    height: auto;
+    padding: 0px 35px;
+    
+}
+.navbar ul{
+
+    float: right;
+    margin-right: 20px;
+}
+.navbar ul li{
+
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 80px;
+}
+.navbar ul li a{
+
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 6px 20px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.4s ease-in-out;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    color: crimson;
+}
+
+.home{
+    height: 400px; padding: 40px;
+    position: relative;
+}
+.title{
+    font-size: 56px;
+    color: #fff; font-weight: 600;
+}
+.home p{
+    color: lemonchiffon;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.sp{
+
+    color: crimson;
+}
+.bt {
+    display: inline-block;
+    padding: 15px 24px;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px ;
+    transition: background-color 0.3s ease;
+}
+
+.bt:hover {
+    background-color: pink;
+    color: #0F172B;
+}
+
+.al{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 40px;
+}
+.al img {
+    width: 28rem;
+    padding: 0px 50px;
+    height: auto;
+    animation: spin 70s linear infinite; /* Using the 'spin' animation */
+    position: relative;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg); /* Starting rotation angle */
+    }
+    100% {
+        transform: rotate(360deg); /* Ending rotation angle (full circle) */
+    }
+}     
+
+/*selection*/
+
+
+
+/* CSS for the category section */
+.category {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  
+  .h2 {
+
+    color: rgba(15, 23, 43, .9);
+    text-align: center;
+    font-family: century;
+    font-size: 30px;
+    
+  }
+  
+  /* CSS for the individual boxes */
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+    
+  }
+  
+  .box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    background-color: #e91e63 ;
+
+  }
+  
+  /* CSS for the font-awesome icons inside the boxes */
+  .box i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* CSS for the headings inside the boxes */
+  .box h5 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    
+  }
+  
+  .box h3 {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+
+/* Section Gallary Start */
+.mh3{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: crimson;
+}
+
+.mh1{
+    text-align: center;
+    font-family: comic sans-serif;
+    color: rgba(15, 23, 43, .9);
+}
+.gallary{
+    margin-top: 50px;
+    display: flex; /* Use flexbox to create a horizontal gallery */
+    justify-content: flex-start; /* Align cards from the left */
+    gap: 25px; /* Set the gap between cards */
+    
+}
+.gallary .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+    gap: 25px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    height: 250px; 
+    width: auto;
+    
+}
+.gallary .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+    column-gap: 3cm;
+    
+    
+}
+.gallary .card img:hover{
+    transform: scale(1.1);
+}
+/* Section Gallary End */
+
+/*footer*/
+.container{
+	max-width: 1170px;
+	margin:auto;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 24%;
+   padding: 0 5px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 40px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
