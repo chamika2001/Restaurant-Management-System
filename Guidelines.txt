@@ -1,0 +1,32 @@
+Configuration and Installation Guidelines:
+
+Step 01: Extracting the Project Files
+1. Download the file this github link - https://github.com/chamika2001/Internet-and-Web-Technology--Group-NO-06.git
+2. Start by extracting the "book.zip" file to the "xammp/htdocs" location on your system.
+3. This can be done by right-clicking on the file and selecting "Extract Here" or using any file extraction software.
+
+Step 02: Creating and Importing Database
+1. Open your web browser and go to "localhost/phpmyadmin/".
+2. Create a new database called "book" by clicking on the "New" button and entering the name in the provided field.
+3. Once the database is created, navigate to the "sql" folder within the extracted "book" folder.
+4. Locate the "book.sql" file and import it into the newly created "book" database.
+   - In phpMyAdmin, select the "Import" tab, choose the "book.sql" file, and click on the "Go" button to import the database.
+
+Step 03: Configuring Sendmail Path
+1. In the same "sql" folder, find the "php.ini" file.
+2. Open the "php.ini" file and go to line 1111.
+3. Modify the file location of the sendmail_path to match the location of your "sendmail.exe" file.
+   - The default path is "\"C:\xampp\sendmail\sendmail.exe\" -t", but it may vary depending on your XAMPP installation.
+   - Update this path to reflect the correct location of your "sendmail.exe" file.
+
+Step 04: Updating PHP Configuration
+1. Delete the existing "php.ini" file located in the "xampp/php" folder.
+2. Copy the provided "php.ini" file (which we have given) to the same location.
+   - Make sure to keep a backup of your original "php.ini" file before replacing it.
+
+Step 05: Updating Sendmail Configuration
+1. Delete the "sendmail.ini" file located in both the "sql" folder and the "xampp/sendmail" folder.
+2. Replace them with the provided "sendmail.ini" file.
+   - Again, remember to keep a backup of your original "sendmail.ini" files.
+
+By following these steps, you will successfully configure and install the project.
