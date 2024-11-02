@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $message = $_POST["message"];
 
-    // Insert the submission data into the database using prepared statement
+    // Insert the submission data into the database using a prepared statement
     $sql = "INSERT INTO submissions (name, email, message) VALUES (?, ?, ?)";
 
     $stmt = $conn->prepare($sql);
