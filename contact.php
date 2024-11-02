@@ -77,7 +77,7 @@ $conn->close();
             </video>
             <div class="overlay"></div>
         </div>
-        <div class="navbar">
+        <div class="navbar"> <!--navbar-->
 
             <img class="logo" src="images/logo.png">
             <ul>
